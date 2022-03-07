@@ -1,0 +1,56 @@
+<!-- Criando uma tabela em html -->
+
+<table>
+
+    <caption> Produzido vs Vendido </caption>
+
+    <!-- Ajudando a identificar, trasendo uma melhor acessibilidade e melhor  procura pelo site pelos motores de busca -->
+    <!-- Para melhorar ainda mais a acessibilidade é uma boa questão definir o que cada elemento é, no caso aqui, colocar um 
+    scopo denomindando o que é grupo de colunas, coluna, grupo de linhas e linha  -->
+
+    <colgroup>
+        <col style="background-color:purple;">
+        <col span="2" style="background-color:blue">
+        <col span="2" style="background-color: crimson">
+    </colgroup>
+    
+    <thead>
+        <tr>
+            <th rowspan> <!-- Especifica o número de linhas que uma célula deve abranger verticalmente -->
+            <th colspan="2" scope="colgroup" > Harvey</th> <!--  Define o número de colunas que uma célula deve abranger (ou mesclar) horizontalmente -->
+            <th colspan="2" scope="colgroup" > Shelby</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produtos</th>
+
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>         
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <th scope="row">V6</th>
+            <td>50</td>
+            <td>20</td>
+            <td>100</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <th scope="row">V12</th>
+            <td>50</td>
+            <td>40</td>
+            <td>50</td>
+            <td>30</td>
+        </tr>
+        
+    </tbody>
+    
+</table>
